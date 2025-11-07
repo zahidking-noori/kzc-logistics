@@ -184,15 +184,18 @@
       <p>Phone: +1 (832) 292-7088</p>
       <p>Email: <a href="mailto:Kzcgroup1@gmail.com">Kzcgroup1@gmail.com</a></p>
 
-      <form>
-        <div class="form-row">
-          <input type="text" placeholder="First Name" required>
-          <input type="text" placeholder="Last Name" required>
-        </div>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send a Message</button>
-      </form>
+     <form name="contact" method="POST" data-netlify="true" action="success.html">
+  <input type="hidden" name="form-name" value="contact">
+
+  <div class="form-row">
+    <input type="text" name="first-name" placeholder="First Name" required>
+    <input type="text" name="last-name" placeholder="Last Name" required>
+  </div>
+
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message" rows="5" required></textarea>
+  <button type="submit" class="btn">Send a Message</button>
+</form>
       <a href="contact.html" class="btn">Request a Quote</a>
     </div>
   </section>
