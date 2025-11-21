@@ -24,20 +24,31 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header sticky">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="images/logo.png" alt="KZC Logo" class="logo"></a>
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-      <a class="cta" href="contact.html">Get a Quoter</a>
-      <button class="mobile-toggle" aria-label="Open menu">☰</button>
-    </div>
-  </header>
+<!-- Header -->
+<header class="site-header sticky">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="KZC Logo" class="logo"></a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a class="cta" href="contact.html">Get a Quote</a>
+    <button class="mobile-toggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const toggleButton = document.querySelector('.mobile-toggle');
+  const nav = document.querySelector('.nav');
+
+  toggleButton.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
 
   <!-- About Section -->
   <section class="section">
