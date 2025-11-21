@@ -1,9 +1,11 @@
 // Mobile menu toggle
-const toggleButton = document.querySelector('.mobile-toggle');
+const toggleButtons = document.querySelectorAll('.mobile-toggle');
 const nav = document.querySelector('.nav');
 
-toggleButton.addEventListener('click', () => {
-  nav.classList.toggle('active');
+toggleButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
 });
 
 // Animate on scroll
