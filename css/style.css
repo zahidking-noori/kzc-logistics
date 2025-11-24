@@ -21,7 +21,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 0.8rem 0;
+  padding: 0.2rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .logo {
-  height: 60px;
+  height: 100px;
 }
 
 .nav {
@@ -55,8 +55,8 @@ body {
 }
 
 .cta {
-  padding: 0.6rem 1.3rem;
-  background: linear-gradient(90deg, #0077ff, #00bfff);
+  padding: 1rem 1.3rem;
+  background: #0077ff;
   color: #fff;
   border-radius: 30px;
   text-decoration: none;
@@ -119,11 +119,11 @@ body {
 
 /* Sections */
 .section {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: auto;
 }
 
@@ -136,7 +136,7 @@ body {
 
 .cards-grid {
   display: grid;
-  gap: 2rem;
+  gap: 5rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -156,7 +156,7 @@ body {
 .card img {
   width: 100%;
   border-radius: 15px;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .card h3 {
@@ -176,7 +176,7 @@ body {
 
 /* About page styles */
 .about-content h2, .about-content h3 {
-  color: #0077ff;
+  color: #949494;
   margin-top: 1.5rem;
 }
 
