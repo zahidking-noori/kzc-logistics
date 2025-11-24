@@ -274,3 +274,23 @@ body {
     flex-direction: column;
   }
 }
+  .nohero {
+    background-image: url("images/businessmeating.jpg");
+    background-size: cover;     /* fill the area without stretching */
+    background-position: center; /* center the image nicely */
+    background-repeat: no-repeat;
+    height: 400px;              /* height you wanted */
+    width: 100%;                /* full width */
+    display: flex;
+    align-items: center;        /* vertically center text */
+
+  padding: 6rem 1rem 4rem;
+  background: linear-gradient(120deg, #0077ff, #00bfff);
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+
+
+}
