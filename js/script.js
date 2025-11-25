@@ -30,4 +30,3 @@ faders.forEach(fader => {
 
 // Footer year auto
 document.getElementById('year').textContent = new Date().getFullYear();
-
