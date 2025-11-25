@@ -311,16 +311,3 @@ body {
   }
 }
 
-
-
-
-.hero-text {
-  opacity: 0;
-  transform: translateY(25px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.hero-text.fade-up {
-  opacity: 1;
-  transform: translateY(0);
-}
