@@ -349,8 +349,6 @@ body {
 
 }
 
-
-
 .click-box {
   display: inline-block;
   border: px solid #007bff;      /* thin blue border */
@@ -370,17 +368,11 @@ body {
 
 }
 
-
 .click-box:hover {
   background: #ffffff;            /* blue hover */
   color: #001ec5;                    /* text turns white */
   transform: translateY(-2px);    /* slight lift */
 }
-
-
-
-
-
 
 .cardss-grid {
   display: grid;
@@ -389,30 +381,6 @@ body {
   margin-top: 2rem;
 }
 
-.cardss {
-  background: #ffffff7a;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
-}
-
-.cardss:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.cardss img {
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 1rem; /* reduced margin so text isn’t pushed too far down */
-}
-
-.cardss h3 {
-  font-size: 1.4rem;
-  color: #0077ff;
-}
 
 
 
@@ -422,7 +390,7 @@ body {
   font-size: 4rem; /* big arrow */
   color: #0077ff; /* blue arrow */
   text-decoration: none;
-  margin-top: 0.3rem; /* space between subtitle and arrow */
+  margin-top: .3rem; /* space between subtitle and arrow */
   transition: transform 0.3s;
 }
 
