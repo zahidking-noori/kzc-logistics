@@ -79,7 +79,7 @@ body {
 /* Hero Section */
 .hero-slider, .hero-slide {
   width: 100%;
-  min-height: 50vh;
+  min-height: 70vh;
   position: relative;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -311,3 +311,142 @@ body {
   }
 }
 
+
+
+
+
+
+
+
+.what-we-do-box {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+  gap: 40px; /* space between left and right sides */
+  margin: 20px 0;
+}
+
+.what-we-do-box .left {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap; /* keeps it on one line */
+}
+
+.what-we-do-box .right {
+  max-width: 600px; /* keeps the paragraphs clean */
+}
+
+.boxxe{
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+
+  border: 3px solid #0267fffb; /* blue border */
+
+    margin: 20px 0;
+
+}
+
+
+
+.click-box {
+  display: inline-block;
+  border: px solid #007bff;      /* thin blue border */
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+
+}
+
+
+.click-box:hover {
+  background: #ffffff;            /* blue hover */
+  color: #001ec5;                    /* text turns white */
+  transform: translateY(-2px);    /* slight lift */
+}
+
+
+
+
+
+
+.cardss-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cardss {
+  background: #ffffff7a;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.cardss:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.cardss img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem; /* reduced margin so text isn’t pushed too far down */
+}
+
+.cardss h3 {
+  font-size: 1.4rem;
+  color: #0077ff;
+}
+
+
+
+
+.card-arrow {
+  display: inline-block;
+  font-size: 4rem; /* big arrow */
+  color: #0077ff; /* blue arrow */
+  text-decoration: none;
+  margin-top: 0.3rem; /* space between subtitle and arrow */
+  transition: transform 0.3s;
+}
+
+.card-arrow:hover {
+  transform: translateX(25px);
+}
+
+.cardss {
+  background: #ffffff; /* keep white */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center; /* center image, subtitle, and arrow */
+}
+
+.cardss img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.2rem;
+}
+
+.cardss h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  color: #0077ff; /* subtitle also blue */
+}
