@@ -418,3 +418,27 @@ body {
   margin-bottom: 0.3rem;
   color: #0077ff; /* subtitle also blue */
 }
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .what-we-do-box {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start; /* keep left alignment */
+  }
+
+  .what-we-do-box .left,
+  .what-we-do-box .right {
+    width: 100%; /* take full width */
+    text-align: left; /* optional, to align text properly */
+  }
+
+  .what-we-do-box .left {
+    margin-bottom: 1rem; /* space between button and text */
+  }
+}
+
+
