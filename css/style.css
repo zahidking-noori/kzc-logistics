@@ -491,10 +491,11 @@ body {
 }
 
 .social-line a {
-  margin-left: 12px;
+  margin-left: 30px;
   text-decoration: none;
   color: #0077ff;
   font-weight: 600;
+  font-size: 25px;
 }
 
 /* -------- NAV MENU (STICKY) -------- */
@@ -608,5 +609,155 @@ body {
   .nav-link {
     font-size: 1.2rem;
     padding: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* good height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for better text visibility */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* The hero content with background image applied inline in HTML */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+/* Text styling */
+.hero-text h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.hero-text p {
+  color: #eee;
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* ---- MOBILE RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .hero {
+    height: 45vh;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+}
+
+
+
+
+
+
+/* ABOUT HERO (unique class, safe to use) */
+.about-hero {
+  background: #f4f6f9;
+  padding: 80px 20px;
+  width: 100%;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Title */
+.about-container h1 {
+  font-size: 42px;
+  color: #002855;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Subtitle */
+.about-container h2 {
+  font-size: 24px;
+  color: #0062cc;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.about-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Fade Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUp 0.9s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .about-container h1 {
+    font-size: 30px;
+  }
+
+  .about-container h2 {
+    font-size: 18px;
+  }
+
+  .about-container p {
+    font-size: 16px;
   }
 }

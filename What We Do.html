@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services — KZC Logistics & Solutions LLC</title>
@@ -29,11 +31,10 @@
       </div>
 
       <div class="social-line">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
+        <a href="#">ⓕ</a>
+        <a href="#">𝕏</a>
+        <a href="#">🅾</a>
+        <a href="#">▶</a>
       </div>
     </div>
 
@@ -66,13 +67,15 @@
 </script>
 
 
-  <!-- Hero -->
-  <section class="hero modern-hero fade-up">
-    <div class="container hero-text">
-      <h1>Our Services</h1>
-      <p>KZC Logistics & Solutions LLC offers reliable, professional, and tailored services for businesses and individuals. Scroll to explore all our offerings in detail.</p>
-    </div>
-  </section>
+<!-- Hero -->
+<section class="hero modern-hero fade-up">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-text" style="background-image: url('images/kzcworkers.jpg');">
+    <h1>Our Services</h1>
+    <p>KZC Logistics & Solutions LLC offers reliable, professional, and tailored services for businesses and individuals. Scroll to explore all our offerings in detail.</p>
+  </div>
+</section>
 
   <!-- Services Cards -->
   <section class="section fade-up">
@@ -127,6 +130,31 @@
     </div>
   </section>
 
+    <!-- Contact Section -->
+  <section class="section fade-up contact-form">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>We’re ready to support your next delivery, maintenance, or logistics project.</p>
+      <p>Address: 4600 Duke Street, Alexandria, VA 22304, USA</p>
+      <p>Phone: +1 (832) 292-7088</p>
+      <p>Email: <a href="mailto:Kzcgroup1@gmail.com">Kzcgroup1@gmail.com</a></p>
+
+     <form
+     action="https://formspree.io/f/xjkzkwna" method="POST">  <input type="hidden" name="form-name" value="contact">
+
+  <div class="form-row">
+    <input type="text" name="first-name" placeholder="First Name" required>
+    <input type="text" name="last-name" placeholder="Last Name" required>
+  </div>
+
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message" rows="5" required></textarea>
+  <button type="submit" class="btn">Send a Message</button>
+</form>
+     <a class="cta" href="contact.html">Get a Quote</a>
+        </div>
+  </section>
+
   <!-- Footer -->
   <footer class="site-footer fade-up">
     <div class="container footer-inner">
@@ -137,6 +165,11 @@
     </div>
   </footer>
 
+
+  
+
   <script src="js/script.js"></script>
+
+
 </body>
 </html>
