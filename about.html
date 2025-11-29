@@ -24,30 +24,61 @@
 </head>
 <body>
 
-<!-- Header -->
-<header class="site-header sticky">
-  <div class="container header-inner">
-    <a class="brand" href="index.html"><img src="images/logo.png" alt="KZC Logo" class="logo"></a>
-    <nav class="nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="services.html" class="nav-link">Services</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-    <a class="cta" href="contact.html">Get a Quote</a>
-    <button class="mobile-toggle" aria-label="Open menu">☰</button>
+<!--header-->
+<!-- TOP BAR -->
+<div class="top-header">
+  <div class="top-header-inner">
+
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="images/logo.png" class="top-logo" alt="KZC Logo">
+    </a>
+
+    <!-- Right side -->
+    <div class="top-info">
+      <div class="contact-line">
+        <span>(832) 292-7088</span>
+        <span>Kzcgroup1@gmail.com</span>
+      </div>
+
+      <div class="social-line">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+
   </div>
+</div>
+
+<!-- NAV BAR -->
+<header class="main-header">
+
+  <!-- Mobile Hamburger -->
+  <div class="mobile-toggle">
+    &#9776;
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav-menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="What We Do.html" class="nav-link">What We Do</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="track.html" class="nav-link">Shipment Tracking</a>
+  </nav>
+
 </header>
 
 <script>
-  // Mobile menu toggle
-  const toggleButton = document.querySelector('.mobile-toggle');
-  const nav = document.querySelector('.nav');
-
-  toggleButton.addEventListener('click', () => {
-    nav.classList.toggle('active');
+  document.querySelector(".mobile-toggle").addEventListener("click", function() {
+    document.querySelector(".nav-menu").classList.toggle("open");
   });
 </script>
+
+
 
 
   <!-- About Section -->

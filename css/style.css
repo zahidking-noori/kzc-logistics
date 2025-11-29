@@ -21,7 +21,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 0.2rem 0;
+  padding: 0rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -40,7 +40,7 @@ body {
 
 .nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.95rem;
 }
 
 .nav-link {
@@ -366,6 +366,7 @@ body {
   padding-left: 40px;
   padding-bottom: 20px;
 
+  
 }
 
 .click-box:hover {
@@ -441,3 +442,171 @@ body {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------- TOP HEADER (NOT STICKY) -------- */
+.top-header {
+  width: 100%;
+  background: white;
+  padding: 0;   /* remove padding */
+  border-bottom: 1px solid #dcdcdc;
+}
+
+
+.top-header-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* keeps phone/email centered with logo */
+  height: 150px;       /* matches logo height */
+}
+
+
+
+.top-logo {
+  height: 120px;
+  display: block;
+}
+
+
+/* Right side */
+.top-info {
+  text-align: right;
+}
+
+.contact-line span {
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.social-line a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 600;
+}
+
+/* -------- NAV MENU (STICKY) -------- */
+.main-header {
+  width: 100%;
+  background: #ffffffee;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.nav-menu {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  padding: 5px 0;
+}
+
+/* Hover underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0077ff;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE PAGE underline */
+.nav-link.active::after {
+  width: 100%;
+}
+
+
+
+
+/* ------------------ MOBILE VERSION ------------------ */
+@media (max-width: 768px) {
+
+  /* Top header stacks vertically */
+  .top-header-inner {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .top-logo {
+    height: 100px;   /* smaller logo for phones */
+    margin-bottom: 10px;
+  }
+
+  .top-info {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .contact-line span {
+    display: block;
+    margin: 3px 0;
+  }
+
+  .social-line a {
+    margin: 0 6px;
+    display: inline-block;
+  }
+
+  /* Make menu a dropdown */
+  .mobile-toggle {
+    display: block;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 1px 0px;
+    text-align: center;
+  }
+
+  .nav-menu {
+    display: none;              /* hide menu until opened */
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    background: white;
+    border-top: 1px solid #ccc;
+  }
+
+  .nav-menu.open {
+    display: flex;               /* show when toggled */
+  }
+
+  /* Make links bigger on phone */
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+}
