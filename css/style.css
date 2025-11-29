@@ -337,37 +337,47 @@ body {
   max-width: 600px; /* keeps the paragraphs clean */
 }
 
-.boxxe{
-  padding-top: 20px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-bottom: 20px;
 
-  border: 3px solid #0267fffb; /* blue border */
-
-    margin: 20px 0;
-
-}
 
 .click-box {
   display: inline-block;
-  border: px solid #007bff;      /* thin blue border */
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 18px;
+  padding: 30px 60px;
+  border: 2px solid #0267fffb;
+
+  font-size: 35px;
   font-weight: 600;
   color: #007bff;
-  text-decoration: none;
-  transition: 0.2s ease;
+  text-decoration: none; 
   cursor: pointer;
 
-  padding-top: 20px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-bottom: 20px;
-
-  
+  /* Desktop default */
+  margin-left: 100px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .click-box {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;     /* allows auto-centering */
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .click-box {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+}
+
+
 
 .click-box:hover {
   background: #ffffff;            /* blue hover */
@@ -378,8 +388,8 @@ body {
 .cardss-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1rem;
+  margin-top: 0.1rem;
 }
 
 
@@ -760,4 +770,32 @@ body {
   .about-container p {
     font-size: 16px;
   }
+}
+
+
+
+
+
+/* Global page padding (except header + hero) */
+.page-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Center all content inside page sections */
+.page-container section {
+  text-align: center;
+}
+
+/* Make sure header + hero ignore padding */
+.site-header,
+.hero {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Keep everything aligned neatly */
+section {
+  margin: 0.1px auto;
+  max-width: 1200px;
 }
