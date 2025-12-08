@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping & Logistics - KZC Logistics & Solutions LLC</title>
+  <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo">
+            </a>
+            <div class="header-right">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> (832) 292-7088</span>
+                    <span><i class="fas fa-envelope"></i> Kzcgroup1@gmail.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="active">What We Do <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="procurement.html">Procurement & Supply Chain</a></li>
+                        <li><a href="shipping.html">Shipping & Logistics</a></li>
+                        <li><a href="fleet.html">Fleet Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">What We Do</a></li>
+            <li><a href="procurement.html">Procurement & Supply Chain</a></li>
+            <li><a href="shipping.html">Shipping & Logistics</a></li>
+            <li><a href="fleet.html">Fleet Management</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200');">
+        <div class="page-hero-content">
+            <h1>Global Shipping & Logistics</h1>
+            <p>Comprehensive freight and logistics solutions connecting businesses worldwide</p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div class="shipping-intro">
+                <div>
+                    <h2>Complete Logistics Solutions</h2>
+                    <p>KZC provides end-to-end logistics services designed to move your cargo safely, efficiently, and on time. From air freight to ocean shipping, road transport to project logistics, we have the expertise and global network to handle shipments of any size or complexity.</p>
+                    <p>Our integrated approach combines technology-driven tracking, strategic partnerships, and dedicated customer service to deliver seamless supply chain solutions. Whether you're shipping a single container or managing complex multi-modal projects, KZC is your trusted logistics partner.</p>
+                    <p>With operations spanning the Americas, Europe, Asia, and the Middle East, we offer truly global coverage with local expertise in each market we serve.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=500" alt="Shipping" style="border-radius: 20px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section style="padding: 80px 0; background: #f9fafb;">
+        <div class="container">
+            <h2 class="section-title">Our Shipping Services</h2>
+            <div class="shipping-services">
+                <div class="shipping-service">
+                    <i class="fas fa-plane"></i>
+                    <h3>Air Freight</h3>
+                    <p>Express and standard air cargo services for time-sensitive shipments worldwide.</p>
+                </div>
+                <div class="shipping-service">
+                    <i class="fas fa-ship"></i>
+                    <h3>Ocean Freight</h3>
+                    <p>FCL and LCL container shipping with competitive rates and reliable schedules.</p>
+                </div>
+                <div class="shipping-service">
+                    <i class="fas fa-truck"></i>
+                    <h3>Road Freight</h3>
+                    <p>FTL and LTL trucking services across North America with real-time tracking.</p>
+                </div>
+                <div class="shipping-service">
+                    <i class="fas fa-boxes"></i>
+                    <h3>Project Logistics</h3>
+                    <p>Specialized transport for oversized, heavy-lift, and complex project cargo.</p>
+                </div>
+                <div class="shipping-service">
+                    <i class="fas fa-warehouse"></i>
+                    <h3>Warehousing</h3>
+                    <p>Strategic storage and distribution facilities with inventory management.</p>
+                </div>
+                <div class="shipping-service">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Customs Brokerage</h3>
+                    <p>Expert customs clearance and compliance services for smooth border crossings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">High-Impact Projects</h2>
+            <div class="featured-projects">
+                <div class="featured-project">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800" alt="Port Operations">
+                    <div class="overlay">
+                        <h3>Port Operations Support</h3>
+                        <p>Comprehensive logistics support for container handling and distribution at major East Coast ports.</p>
+                    </div>
+                </div>
+                <div class="featured-project">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Energy Sector">
+                    <div class="overlay">
+                        <h3>Energy Sector Logistics</h3>
+                        <p>Specialized transport and logistics for oil & gas equipment across the Gulf Coast region.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose KZC -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose KZC Logistics</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Network</h3>
+                    <p>Partnerships in 100+ countries for seamless worldwide coverage.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Advanced technology for complete visibility of your shipments.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Dedicated Support</h3>
+                    <p>Personal account managers for responsive customer service.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cargo Insurance</h3>
+                    <p>Comprehensive coverage options to protect your valuable shipments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Ready to Ship?</h2>
+            <p>Get a competitive quote for your next shipment.</p>
+            <a href="contact.html" class="btn btn-white">Request a Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+ <footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo" class="footer-logo">
+        <p>Your trusted partner for delivery, logistics, maintenance, labor supply, and waste removal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">What We Do</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="returns.html">Returns & Refunds</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>4600 Duke Street, Alexandria, VA 22304, USA</p>
+        <p>Phone: +1 (832) 292-7088</p>
+        <p>Email: Kzcgroup1@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KZC Logistics & Solutions LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

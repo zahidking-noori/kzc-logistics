@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - KZC Logistics & Solutions LLC</title>
+  <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo">
+            </a>
+            <div class="header-right">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> (832) 292-7088</span>
+                    <span><i class="fas fa-envelope"></i> Kzcgroup1@gmail.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="services.html">What We Do <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="procurement.html">Procurement & Supply Chain</a></li>
+                        <li><a href="shipping.html">Shipping & Logistics</a></li>
+                        <li><a href="fleet.html">Fleet Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">What We Do</a></li>
+            <li><a href="procurement.html">Procurement & Supply Chain</a></li>
+            <li><a href="shipping.html">Shipping & Logistics</a></li>
+            <li><a href="fleet.html">Fleet Management</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200');">
+        <div class="page-hero-content">
+            <h1>Our Projects</h1>
+            <p>Explore our portfolio of successful projects across various industries and sectors.</p>
+        </div>
+    </section>
+
+    <!-- Filter & Projects -->
+    <section style="padding: 80px 0; background: #f9fafb;">
+        <div class="container">
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('logistics')">Logistics</button>
+                <button class="filter-btn" onclick="filterProjects('fleet')">Fleet Management</button>
+                <button class="filter-btn" onclick="filterProjects('procurement')">Procurement</button>
+                <button class="filter-btn" onclick="filterProjects('construction')">Construction</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <div class="project-card" data-category="logistics">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600" alt="Project">
+                        <span class="project-category">Logistics</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Port of Virginia Operations</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Norfolk, Virginia</p>
+                        <p>Comprehensive logistics support for container handling and distribution operations at one of the busiest ports on the East Coast.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="fleet">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600" alt="Project">
+                        <span class="project-category">Fleet Management</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Federal Agency Fleet Program</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Washington, D.C.</p>
+                        <p>Full-service fleet management for a federal agency including vehicle acquisition, maintenance, and telematics integration.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="procurement">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600" alt="Project">
+                        <span class="project-category">Procurement</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Industrial Equipment Sourcing</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Houston, Texas</p>
+                        <p>Strategic procurement of heavy machinery and industrial equipment for a major energy sector client.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction">
+                    <div class="project-image">
+                        <img src="https://kzc-logistics.icu/images/labor.jpg" alt="Project">
+                        <span class="project-category">Construction</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Commercial Building Support</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Alexandria, Virginia</p>
+                        <p>Skilled labor supply and logistics support for a major commercial construction project in the DMV area.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="logistics">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=600" alt="Project">
+                        <span class="project-category">Logistics</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Fulfillment Center</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Maryland</p>
+                        <p>End-to-end logistics solutions for a high-volume e-commerce fulfillment operation with next-day delivery capabilities.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="fleet">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Project">
+                        <span class="project-category">Fleet Management</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Municipal Fleet Optimization</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Richmond, Virginia</p>
+                        <p>Complete fleet optimization program for city vehicles including maintenance scheduling and fuel management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div class="areas-grid">
+                <div class="area-card">
+                    <i class="fas fa-flag-usa"></i>
+                    <h3>United States</h3>
+                    <p>Serving clients across all 50 states with a focus on the Eastern Seaboard and Gulf Coast regions.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>International</h3>
+                    <p>Global logistics capabilities with partners in Europe, Asia, and the Middle East for worldwide project support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Have a Project in Mind?</h2>
+            <p>Let's discuss how KZC can support your next project.</p>
+            <a href="contact.html" class="btn btn-white">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo" class="footer-logo">
+        <p>Your trusted partner for delivery, logistics, maintenance, labor supply, and waste removal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">What We Do</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="returns.html">Returns & Refunds</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>4600 Duke Street, Alexandria, VA 22304, USA</p>
+        <p>Phone: +1 (832) 292-7088</p>
+        <p>Email: Kzcgroup1@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KZC Logistics & Solutions LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

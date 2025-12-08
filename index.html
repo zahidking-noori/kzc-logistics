@@ -1,345 +1,480 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KZC Logistics & Solutions LLC</title>
+    <!-- Page description for Google -->
+    <meta name="description" content="KZC Logistics & Solutions LLC provides expert delivery, logistics, property maintenance, labor supply, and eco-friendly waste removal services in Virginia and globally.">
+  <meta name="google-site-verification" content="0Tnogq1bN3bGCu7er8wZBGIKxS-yH3pk9zyDnRTtHHw" />
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="KZC Logistics & Solutions LLC">
+    <meta property="og:description" content="Expert delivery, logistics, maintenance, and labor services in Virginia and worldwide.">
+    <meta property="og:image" content="https://www.kzc-logistics.icu/images/logokzc.png">
+    <meta property="og:url" content="https://www.kzc-logistics.icu">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KZC Logistics & Solutions LLC">
+    <meta name="twitter:description" content="Expert delivery, logistics, maintenance, and labor services in Virginia and worldwide.">
+    <meta name="twitter:image" content="https://www.kzc-logistics.icu/images/logokzc.png">
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>KZC Logistics & Solutions LLC</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+      <!-- Top Header -->
+      <header class="top-header">
+          <div class="container header-content">
+              <a href="index.html" class="logo">
+                  <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo">
+              </a>
+              <div class="header-right">
+                  <div class="contact-info">
+                      <span><i class="fas fa-phone"></i> (832) 292-7088</span>
+                      <span><i class="fas fa-envelope"></i> Kzcgroup1@gmail.com</span>
+                  </div>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-x-twitter"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+              <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                  <i class="fas fa-bars"></i>
+              </button>
+          </div>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+          <div class="container">
+              <ul class="nav-links">
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li class="dropdown">
+                      <a href="services.html">What We Do <i class="fas fa-chevron-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="services.html">All Services</a></li>
+                          <li><a href="procurement.html">Procurement & Supply Chain</a></li>
+                          <li><a href="shipping.html">Shipping & Logistics</a></li>
+                          <li><a href="fleet.html">Fleet Management</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">What We Do</a></li>
+              <li><a href="procurement.html">Procurement & Supply Chain</a></li>
+              <li><a href="shipping.html">Shipping & Logistics</a></li>
+              <li><a href="fleet.html">Fleet Management</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+
+
+  <!-- Hero Slider Section -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">  
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KZC Logistics & Solutions LLC</title>
-  <!-- Page description for Google -->
-  <meta name="description" content="KZC Logistics & Solutions LLC provides expert delivery, logistics, property maintenance, labor supply, and eco-friendly waste removal services in Virginia and globally.">
-<meta name="google-site-verification" content="0Tnogq1bN3bGCu7er8wZBGIKxS-yH3pk9zyDnRTtHHw" />
-  <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="KZC Logistics & Solutions LLC">
-  <meta property="og:description" content="Expert delivery, logistics, maintenance, and labor services in Virginia and worldwide.">
-  <meta property="og:image" content="https://www.kzc-logistics.icu/images/logokzc.png">
-  <meta property="og:url" content="https://www.kzc-logistics.icu">
-  <meta property="og:type" content="website">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KZC Logistics & Solutions LLC">
-  <meta name="twitter:description" content="Expert delivery, logistics, maintenance, and labor services in Virginia and worldwide.">
-  <meta name="twitter:image" content="https://www.kzc-logistics.icu/images/logokzc.png">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin:0; padding:0; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 10px 10px; }
-    h1, h2, h3 { margin-bottom: 15px; }
-    p { margin-bottom: 15px; }
-    ul { margin-bottom: 15px; padding-left: 20px; }
-    li { margin-bottom: 8px; }
-    .btn { display: inline-block; margin: 10px 0; padding: 12px 28px; background: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; }
-    .card { margin-bottom: 30px; padding: 20px; background: #f9f9f9; border-radius: 8px; }
-    .cards-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-    form input, form textarea { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 5px; }
-    form .form-row { display: flex; gap: 15px; margin-bottom: 12px; }
-    form .form-row input { flex: 1; }
-    header, footer { background: #fff; padding: 15px 0; border-bottom: 1px solid #ddd; }
-    nav a { margin-right: 15px; text-decoration: none; color: #007BFF; font-weight: bold; }
-  </style>
-</head>
-<body>
-
-
-
-<!--header-->
-<!-- TOP BAR -->
-<div class="top-header">
-  <div class="top-header-inner">
-
-    <!-- Logo -->
-    <a href="index.html">
-      <img src="images/logo.png" class="top-logo" alt="KZC Logo">
-    </a>
-
-    <!-- Right side -->
-    <div class="top-info">
-      <div class="contact-line">
-        <span>(832) 292-7088</span>
-        <span>Kzcgroup1@gmail.com</span>
-      </div>
-
-      <div class="social-line">
-        <a href="#">ⓕ</a>
-        <a href="#">𝕏</a>
-        <a href="#">🅾</a>
-        <a href="#">▶</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- NAV BAR -->
-<header class="main-header">
-
-  <!-- Mobile Hamburger -->
-  <div class="mobile-toggle">
-    &#9776;
-  </div>
-
-  <!-- Navigation -->
-  <nav class="nav-menu">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="What We Do.html" class="nav-link">What We Do</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <a href="project.html" class="nav-link">Projects</a>
-    <!-- <a href="track.html" class="nav-link">Shipment Tracking</a> -->
-  </nav>
-
-</header>
-
-<script>
-  document.querySelector(".mobile-toggle").addEventListener("click", function() {
-    document.querySelector(".nav-menu").classList.toggle("open");
-  });
-</script>
-
-
-
-  <!-- Hero Section -->
-<!-- Hero Slider Section -->
-<div class="hero-slider swiper">
-  <div class="swiper-wrapper">
-
-    <!-- Slide 1: Main Title + businessmeating.jpg -->
-    <div class="swiper-slide hero-slide" style="background-image: url('images/businessmeating.jpg');">
-      <div class="hero-text">
-        <h1>KZC Logistics & Solutions LLC</h1>
-        <h2>Reliable. Efficient. Professional.</h2>
-        <p>Your trusted partner for delivery, logistics, maintenance, labor supply, and waste removal — serving Alexandria, Virginia, the East Coast, and clients around the world.</p>
-        <a class="cta" href="contact.html">Get a Quote</a>
-      </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const swiper = new Swiper(".hero-slider", {
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  });
-</script>
-
-
-    <!-- Slide 2: Labor Supply + kzcworkers.jpg -->
-    <div class="swiper-slide hero-slide" style="background-image: url('images/kzcworkers.jpg');">
-      <div class="hero-text">
-        <h2>Skilled & Unskilled Labor Supply</h2>
-        <p>Short-term or long-term staffing for businesses. General labor for moving, loading, and support tasks. Skilled workers available for specific projects.</p>
-          <a class="cta" href="contact.html">Book Now</a>
-      </div>
-    </div>
-
-    <!-- Slide 3: Delivery & Logistics + kzctrucks.jpg -->
-    <div class="swiper-slide hero-slide" style="background-image: url('images/kzctrucks.jpg');">
-      <div class="hero-text">
-        <h2>Global Delivery & Logistics</h2>
-        <p>Reliable local and international delivery solutions. Safe, on-time transport of packages, goods, and equipment. Customized logistics planning for businesses and individuals.</p>
-        <a class="cta" href="contact.html">Book Now</a>
-      </div>
-    </div>
-
-    <!-- Slide 4: Maintenance + kzcmaintenance.jpg -->
-    <div class="swiper-slide hero-slide" style="background-image: url('images/kzcmaintenance.jpg');">
-      <div class="hero-text">
-        <h2>Property Maintenance</h2>
-        <p>General repairs, cleaning, and upkeep. Seasonal maintenance to keep spaces safe and functional. Customized plans for both residential and commercial properties.</p>
-        <a class="cta" href="contact.html">Book Now</a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Slider navigation -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-
-  <!-- About Us Section -->
-
-
-
-  <section class="section fade-up">
-    <div class="container">
-      <div class="what-we-do-box">
-    
-
-      <a class="boxxe click-box" href="What We Do.html" >What We Do</a>
-      <p class="right">At KZC Logistics & Solutions LLC, we specialize in providing reliable, efficient, and safe solutions for businesses and individuals. Our services include delivery and logistics, property maintenance, labor supply, and eco-friendly waste removal. We customize every project to match our clients’ needs, whether it’s managing shipments, maintaining properties, or supplying skilled labor for specialized tasks.</p>
-      <!-- <p>With a commitment to professionalism, quality, and customer satisfaction, KZC is your trusted partner for seamless operations and dependable support. We aim to make every project simple, efficient, and successful for our clients.</p>
-      
-      <h3>Our Mission</h3>
-      <p>To deliver practical, dependable, and high-quality service solutions that help businesses and communities thrive.</p>
-
-      <h3>Our Core Values</h3>
-      <ul>
-        <li><strong>Integrity:</strong> We build trust through honesty and transparency.</li>
-        <li><strong>Reliability:</strong> We deliver results — on time, every time.</li>
-        <li><strong>Innovation:</strong> We adapt, improve, and grow with our clients.</li>
-        <li><strong>Commitment:</strong> We take pride in every project, large or small.</li>
-      </ul> -->
-
-      <!-- <a href="about.html" class="btn">Learn More About Us →</a> -->
-    </div>
-  </div>
-</div>
-  </section>
-
-   <!-- images for abovehiome-->
-<section class="section fade-up">
-  <div class="container">
-
-    <div class="cardss-grid">
-      <article class="cardss">
-        <img src="images/maintenance.jpg" alt="Property Maintenance">
-        <h3>Maintenance & Repairs</h3>
-        <a href="What We Do.html" class="card-arrow">→</a>
-      </article>
-
-      <article class="cardss">
-        <img src="images/kzcworkers.jpg" alt="Labor Supply">
-        <h3>Labor Supply</h3>
-        <a href="What We Do.html" class="card-arrow">→</a>
-      </article>
-    </div>
-
-
-      <a href="What We Do.html" class="btn">Explore All Services →</a>
-    </div>
-  </section>
- <!--<article class="cardss">
-        <h3>Waste Removal</h3>
-        <p>From junk hauling to post-construction cleanup, our eco-friendly removal services keep your space clean, safe, and compliant. We prioritize responsible disposal and recycling options.</p>
-      </article>
-      <article class="cardss">
-      <img src="images/delivery.jpg" alt="Property Maintenance" >
-        <h3>Delivery & Logistics</h3>
-        <p>Fast, secure, and on-time transportation of goods and materials — locally and globally. We handle every shipment with care, offering customized logistics planning for businesses and individuals.</p>
-      </article>-->
-
-
-
-  <!-- Industries Section -->
-  <section class="section fade-up">
-    <div class="container">
-      <h2>Industries We Serve</h2>
-      <ul>
-        <li>Commercial & Office Buildings</li>
-        <li>Residential Properties & Complexes</li>
-        <li>Construction & Infrastructure</li>
-        <li>Logistics & Warehousing</li>
-        <li>Industrial & Manufacturing</li>
-        <li>Educational & Public Institutions</li>
-      </ul>
-      <p>Whether local or international, we’re built to deliver.</p>
-    </div>
-  </section>
-
-  <!-- How We Work Section -->
-  <section class="section fade-up">
-    <div class="container">
-      <h2>How We Work</h2>
-      <ul>
-        <li><strong>Consultation:</strong> We assess your project or service needs in detail.</li>
-        <li><strong>Customized Plan:</strong> We build a solution that fits your schedule and budget.</li>
-        <li><strong>Execution:</strong> Our skilled team delivers efficiently and professionally.</li>
-        <li><strong>Follow-Up:</strong> We ensure your satisfaction and ongoing support.</li>
-      </ul>
-      <p>We don’t just complete a job — we build long-term partnerships.</p>
-      <a href="contact.html" class="btn">Contact Us Today →</a>
-    </div>
-  </section>
-
-  <!-- Why Choose KZC Section -->
-  <section class="section fade-up">
-    <div class="container">
-      <h2>Why Choose KZC?</h2>
-      <ul>
-        <li>Global Reach: We manage operations and logistics across multiple countries.</li>
-        <li>Proven Experience: A team with international and local service expertise.</li>
-        <li>Flexible Packages: Custom solutions for individuals, businesses, and agencies.</li>
-        <li>Reliable Support: 24/7 availability and transparent communication.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="section fade-up">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <div class="cards-grid">
-        <article class="card testimonial">
-          <p>Working with KZC has been a game-changer for our business operations. Their team is professional and reliable.</p>
-          <strong>— Sarah Johnson</strong>
-        </article>
-        <article class="card testimonial">
-          <p>Their skilled labor services have been integral to our project success!</p>
-          <strong>— Mark Patel</strong>
-        </article>
-        <article class="card testimonial">
-          <p>Fast and dependable — KZC takes the stress out of logistics!</p>
-          <strong>— Lisa Kim</strong>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Service Areas Section -->
-  <section class="section fade-up">
-    <div class="container">
-      <h2>Service Areas</h2>
-      <p>Headquartered in Alexandria, VA, proudly serving Northern Virginia, Washington D.C., Maryland, and the East Coast.</p>
-      <p>Global shipping routes across the Middle East, Central Asia, and beyond.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section fade-up contact-form">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p>We’re ready to support your next delivery, maintenance, or logistics project.</p>
-      <p>Address: 4600 Duke Street, Alexandria, VA 22304, USA</p>
-      <p>Phone: +1 (832) 292-7088</p>
-      <p>Email: <a href="mailto:Kzcgroup1@gmail.com">Kzcgroup1@gmail.com</a></p>
-
-     <form
-     action="https://formspree.io/f/xjkzkwna" method="POST">  <input type="hidden" name="form-name" value="contact">
-
-  <div class="form-row">
-    <input type="text" name="first-name" placeholder="First Name" required>
-    <input type="text" name="last-name" placeholder="Last Name" required>
-  </div>
-
-  <input type="email" name="email" placeholder="Email" required>
-  <textarea name="message" placeholder="Message" rows="5" required></textarea>
-  <button type="submit" class="btn">Send a Message</button>
-</form>
-     <a class="cta" href="contact.html">Get a Quote</a>
+  <div class="hero-slider swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide hero-slide" style="background-image: url('images/businessmeating.jpg');">
+        <div class="hero-text">
+          <h1>KZC Logistics & Solutions LLC</h1>
+          <h2>Reliable. Efficient. Professional.</h2>
+          <p>Your trusted partner for delivery, logistics, maintenance, labor supply, and waste removal — serving Alexandria, Virginia, the East Coast, and clients around the world.</p>
+          <a class="cta" href="contact.html">Get a Quote</a>
         </div>
-  </section>
+      </div>
 
-  <!-- Footer -->
-  <footer class="site-footer fade-up">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> KZC Logistics & Solutions LLC</p>
-      <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="accessibility.html">Accessibility Statement</a> | <a href="terms.html">Terms & Conditions</a> | <a href="refund-policy.html">Refund Policy</a></p>
+      <!-- Slide 2 -->
+      <div class="swiper-slide hero-slide" style="background-image: url('images/kzcworkers.jpg');">
+        <div class="hero-text">
+          <h2>Skilled & Unskilled Labor Supply</h2>
+          <p>Short-term or long-term staffing for businesses. General labor for moving, loading, and support tasks. Skilled workers available for specific projects.</p>
+          <a class="cta" href="contact.html">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide hero-slide" style="background-image: url('images/kzctrucks.jpg');">
+        <div class="hero-text">
+          <h2>Global Delivery & Logistics</h2>
+          <p>Reliable local and international delivery solutions. Safe, on-time transport of packages, goods, and equipment. Customized logistics planning for businesses and individuals.</p>
+          <a class="cta" href="contact.html">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide hero-slide" style="background-image: url('images/kzcmaintenance.jpg');">
+        <div class="hero-text">
+          <h2>Property Maintenance</h2>
+          <p>General repairs, cleaning, and upkeep. Seasonal maintenance to keep spaces safe and functional. Customized plans for both residential and commercial properties.</p>
+          <a class="cta" href="contact.html">Book Now</a>
+        </div>
+      </div>
     </div>
-  </footer>
+
+    <!-- Slider Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.addEventListener("DOMContentLoaded", function() {
+      const swiper = new Swiper(".hero-slider", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    });
   </script>
-</body>
-</html>
+
+  <!-- Hero Slider CSS -->
+  <style>
+  .hero-slider {
+    width: 100%;
+    height: 90vh; /* adjust height */
+    position: relative;
+  }
+
+  .swiper-slide.hero-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0,0,0,0.4); /* optional overlay for text */
+    border-radius: 10px;
+  }
+
+  .hero-text h1, .hero-text h2 {
+    margin-bottom: 15px;
+  }
+
+  .hero-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .hero-text .cta {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  </style>
+
+      <!-- What We Do Section -->
+      <section class="what-we-do">
+          <div class="container">
+              <a href="services.html" class="section-tag">What We Do</a>
+              <p class="section-description">
+                  KZC Logistics & Solutions LLC offers trusted delivery and logistics, skilled labor supply, 
+                  property maintenance, waste removal, and custom business solutions across the U.S. and beyond.
+              </p>
+          </div>
+      </section>
+
+      <!-- Service Cards -->
+      <section class="service-cards">
+          <div class="container">
+              <div class="cards-grid">
+                  <div class="service-card">
+                      <div class="card-image">
+                          <img src="https://kzc-logistics.icu/images/delivery.jpg" alt="Delivery">
+                      </div>
+                      <div class="card-content">
+                          <h3>Global Delivery & Logistics</h3>
+                          <a href="shipping.html">Learn More <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="service-card">
+                      <div class="card-image">
+                          <img src="https://kzc-logistics.icu/images/labor.jpg" alt="Labor">
+                      </div>
+                      <div class="card-content">
+                          <h3>Skilled Labor Supply</h3>
+                          <a href="services.html">Learn More <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="service-card">
+                      <div class="card-image">
+                          <img src="https://kzc-logistics.icu/images/maintenance.jpg" alt="Maintenance">
+                      </div>
+                      <div class="card-content">
+                          <h3>Property Maintenance</h3>
+                          <a href="services.html">Learn More <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="service-card">
+                      <div class="card-image">
+                          <img src="https://kzc-logistics.icu/images/waste.jpg" alt="Waste">
+                      </div>
+                      <div class="card-content">
+                          <h3>Waste Removal</h3>
+                          <a href="services.html">Learn More <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="text-center">
+                  <a href="services.html" class="btn btn-outline">Explore All Services <i class="fas fa-arrow-right"></i></a>
+              </div>
+          </div>
+      </section>
+
+      <!-- Industries Section -->
+      <section class="industries">
+          <div class="container">
+              <h2 class="section-title">Industries We Serve</h2>
+              <div class="industries-grid">
+                  <div class="industry-item">
+                      <i class="fas fa-building"></i>
+                      <span>Commercial</span>
+                  </div>
+                  <div class="industry-item">
+                      <i class="fas fa-home"></i>
+                      <span>Residential</span>
+                  </div>
+                  <div class="industry-item">
+                      <i class="fas fa-industry"></i>
+                      <span>Industrial</span>
+                  </div>
+                  <div class="industry-item">
+                      <i class="fas fa-landmark"></i>
+                      <span>Government</span>
+                  </div>
+                  <div class="industry-item">
+                      <i class="fas fa-truck"></i>
+                      <span>Transportation</span>
+                  </div>
+                  <div class="industry-item">
+                      <i class="fas fa-box"></i>
+                      <span>Retail</span>
+                  </div>
+              </div>
+              <p class="text-center text-muted">...and many more across the United States and internationally.</p>
+          </div>
+      </section>
+
+      <!-- How We Work -->
+      <section class="how-we-work">
+          <div class="container">
+              <h2 class="section-title">How We Work</h2>
+              <div class="steps-grid">
+                  <div class="step">
+                      <div class="step-icon">
+                          <i class="fas fa-comments"></i>
+                      </div>
+                      <h3>Consultation</h3>
+                      <p>We listen to your needs and understand your requirements.</p>
+                  </div>
+                  <div class="step">
+                      <div class="step-icon">
+                          <i class="fas fa-clipboard-list"></i>
+                      </div>
+                      <h3>Planning</h3>
+                      <p>Our team creates a customized solution for your project.</p>
+                  </div>
+                  <div class="step">
+                      <div class="step-icon">
+                          <i class="fas fa-cogs"></i>
+                      </div>
+                      <h3>Execution</h3>
+                      <p>We deliver professional services with precision and care.</p>
+                  </div>
+                  <div class="step">
+                      <div class="step-icon">
+                          <i class="fas fa-check-circle"></i>
+                      </div>
+                      <h3>Follow-Up</h3>
+                      <p>We ensure your complete satisfaction with our work.</p>
+                  </div>
+              </div>
+              <div class="text-center">
+                  <a href="contact.html" class="btn btn-primary">Start Your Project <i class="fas fa-arrow-right"></i></a>
+              </div>
+          </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="why-choose">
+          <div class="container">
+              <h2 class="section-title">Why Choose KZC?</h2>
+              <div class="features-grid">
+                  <div class="feature">
+                      <div class="feature-icon">
+                          <i class="fas fa-globe"></i>
+                      </div>
+                      <h3>Global Reach</h3>
+                      <p>Services across the United States and international destinations.</p>
+                  </div>
+                  <div class="feature">
+                      <div class="feature-icon">
+                          <i class="fas fa-award"></i>
+                      </div>
+                      <h3>Proven Experience</h3>
+                      <p>Years of expertise in logistics and business solutions.</p>
+                  </div>
+                  <div class="feature">
+                      <div class="feature-icon">
+                          <i class="fas fa-sliders-h"></i>
+                      </div>
+                      <h3>Flexible Packages</h3>
+                      <p>Customized solutions tailored to your specific needs.</p>
+                  </div>
+                  <div class="feature">
+                      <div class="feature-icon">
+                          <i class="fas fa-headset"></i>
+                      </div>
+                      <h3>Reliable Support</h3>
+                      <p>Dedicated team available to assist you every step of the way.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials">
+          <div class="container">
+              <h2 class="section-title">What Our Clients Say</h2>
+              <div class="testimonials-grid">
+                  <div class="testimonial">
+                      <i class="fas fa-quote-left quote-icon"></i>
+                      <p>"KZC provided exceptional logistics support for our construction project. On-time, professional, and reliable."</p>
+                      <span class="author">— Construction Manager, TX</span>
+                  </div>
+                  <div class="testimonial">
+                      <i class="fas fa-quote-left quote-icon"></i>
+                      <p>"Their labor supply team was exactly what we needed. Skilled workers who got the job done right."</p>
+                      <span class="author">— Warehouse Director, VA</span>
+                  </div>
+                  <div class="testimonial">
+                      <i class="fas fa-quote-left quote-icon"></i>
+                      <p>"Fast, efficient waste removal services. KZC made our cleanup project stress-free."</p>
+                      <span class="author">— Property Owner, MD</span>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Service Areas -->
+      <section class="service-areas">
+          <div class="container">
+              <h2 class="section-title">Service Areas</h2>
+              <div class="areas-grid">
+                  <div class="area-card">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <h3>Local Headquarters</h3>
+                      <p>Alexandria, VA serving the greater DMV area including Washington D.C., Maryland, and Virginia.</p>
+                  </div>
+                  <div class="area-card">
+                      <i class="fas fa-globe-americas"></i>
+                      <h3>Global Reach</h3>
+                      <p>International logistics and delivery services connecting businesses worldwide.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="contact-cta">
+          <div class="container">
+              <h2>Get in Touch</h2>
+              <p>Contact us today for a free consultation and personalized quote.</p>
+              <div class="cta-info">
+                  <div class="cta-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>4600 Duke Street, Alexandria, VA 22304, USA</span>
+                  </div>
+                  <div class="cta-item">
+                      <i class="fas fa-phone"></i>
+                      <span>+1 (832) 292-7088</span>
+                  </div>
+                  <div class="cta-item">
+                      <i class="fas fa-envelope"></i>
+                      <span>Kzcgroup1@gmail.com</span>
+                  </div>
+              </div>
+              <a href="contact.html" class="btn btn-white">Get a Quote <i class="fas fa-arrow-right"></i></a>
+          </div>
+      </section>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo" class="footer-logo">
+        <p>Your trusted partner for delivery, logistics, maintenance, labor supply, and waste removal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">What We Do</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="returns.html">Returns & Refunds</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>4600 Duke Street, Alexandria, VA 22304, USA</p>
+        <p>Phone: +1 (832) 292-7088</p>
+        <p>Email: Kzcgroup1@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KZC Logistics & Solutions LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+  </body>
+  </html>

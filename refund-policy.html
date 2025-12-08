@@ -1,108 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">  
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Refund Policy — KZC Logistics & Solutions LLC</title>
+  <title>Returns & Refunds — KZC Logistics & Solutions LLC</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-
-<!--header-->
-<!-- TOP BAR -->
-<div class="top-header">
-  <div class="top-header-inner">
-
-    <!-- Logo -->
-    <a href="index.html">
-      <img src="images/logo.png" class="top-logo" alt="KZC Logo">
-    </a>
-
-    <!-- Right side -->
-    <div class="top-info">
-      <div class="contact-line">
-        <span>(832) 292-7088</span>
-        <span>Kzcgroup1@gmail.com</span>
+  <!-- Header & Navigation -->
+  <header class="top-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo">
+      </a>
+      <div class="header-right">
+        <div class="contact-info">
+          <span><i class="fas fa-phone"></i> (832) 292-7088</span>
+          <span><i class="fas fa-envelope"></i> Kzcgroup1@gmail.com</span>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
       </div>
-
-      <div class="social-line">
-        <a href="#">ⓕ</a>
-        <a href="#">𝕏</a>
-        <a href="#">🅾</a>
-        <a href="#">▶</a>
-      </div>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
+  </header>
 
-  </div>
-</div>
-
-<!-- NAV BAR -->
-<header class="main-header">
-
-  <!-- Mobile Hamburger -->
-  <div class="mobile-toggle">
-    &#9776;
-  </div>
-
-  <!-- Navigation -->
-  <nav class="nav-menu">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="What We Do.html" class="nav-link">What We Do</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <a href="project.html" class="nav-link">Projects</a>
-    <!-- <a href="track.html" class="nav-link">Shipment Tracking</a> -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">What We Do</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="returns.html" class="active">Returns</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-</header>
+  <!-- Hero Section -->
+  <section class="hero-slider" style="background-image: url('images/businessmeating.jpg'); height: 70vh; display:flex; align-items:center; justify-content:center;">
+    <div class="hero-text" style="background: rgba(0,0,0,0.5); padding: 30px; border-radius: 10px; max-width: 800px; text-align:center; color:#fff;">
+      <h1>Returns & Refunds</h1>
+      <p>Learn about our policies for returns, refunds, and service adjustments.</p>
+    </div>
+  </section>
 
-<script>
-  document.querySelector(".mobile-toggle").addEventListener("click", function() {
-    document.querySelector(".nav-menu").classList.toggle("open");
-  });
-</script>
+  <!-- Returns Content -->
+  <section class="container" style="padding: 80px 0;">
+    <h2 class="section-title text-center">Our Policy</h2>
+    <p class="section-description text-center">
+      KZC Logistics & Solutions LLC is committed to providing high-quality services. If you are unsatisfied with our service, we have clear policies for returns and refunds.
+    </p>
 
+    <div class="cards-grid" style="margin-top: 60px;">
+      <div class="service-card">
+        <div class="card-content">
+          <h3>Service Adjustments</h3>
+          <p>If a service does not meet the agreed specifications, we offer adjustments or corrections at no extra cost.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-content">
+          <h3>Refund Requests</h3>
+          <p>Refunds can be requested within 7 days of service delivery, depending on the service type and agreement terms.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-content">
+          <h3>Procedure</h3>
+          <p>To initiate a return or refund, contact our support team with your service details, and we will guide you through the process.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-content">
+          <h3>Exceptions</h3>
+          <p>Custom services or third-party services may not be eligible for refunds. Policies may vary based on specific contracts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="section fade-up">
-  <div class="container">
-    <h1>Refund Policy</h1>
-    <p>Last Updated: January 2025</p>
+  <!-- CTA Section -->
+  <section class="contact-cta" style="background: #0026ff; padding: 60px 0; text-align:center;">
+    <h2>Need Help With a Return?</h2>
+    <p>Our team is ready to assist you with any refund or adjustment requests.</p>
+    <a href="contact.html" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+  </section>
 
-    <h2>Service Refunds</h2>
-    <ul>
-      <li>Refunds are available only for services not yet started.</li>
-      <li>Completed services are non-refundable.</li>
-      <li>Deposits may be non-refundable depending on preparation requirements.</li>
-    </ul>
-
-    <h2>Cancellations</h2>
-    <ul>
-      <li>Cancellations must be submitted at least 24 hours before scheduled service.</li>
-      <li>Late cancellations may incur fees.</li>
-    </ul>
-
-    <h2>Exceptions</h2>
-    <p>If a service cannot be performed due to our fault, KZC Logistics & Solutions LLC may issue a full or partial refund.</p>
-
-    <h2>How to Request a Refund</h2>
-    <p>Please contact us with your service details:</p>
-    <p>Email: <a href="mailto:Kzcgroup1@gmail.com">Kzcgroup1@gmail.com</a></p>
-    <p>Phone: +1 (832) 292-7088</p>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> KZC Logistics & Solutions LLC</p>
-  </div>
-</footer>
-
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo" class="footer-logo">
+          <p>Your trusted partner for delivery, logistics, maintenance, labor supply, and waste removal.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">What We Do</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>4600 Duke Street, Alexandria, VA 22304, USA</p>
+          <p>Phone: +1 (832) 292-7088</p>
+          <p>Email: Kzcgroup1@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KZC Logistics & Solutions LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

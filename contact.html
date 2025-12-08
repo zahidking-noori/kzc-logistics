@@ -3,104 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact — KZC Logistics & Solutions LLC</title>
+    <title>Contact Us - KZC Logistics & Solutions LLC</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Top Header -->
-    <div class="top-header">
-        <div class="top-header-inner">
-            <a href="index.html"><img src="images/logo.png" class="top-logo" alt="KZC Logo"></a>
-            <div class="top-info">
-                <div class="contact-line">
-                    <span>(832) 292-7088</span>
-                    <span>Kzcgroup1@gmail.com</span>
+    <header class="top-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo">
+            </a>
+            <div class="header-right">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> (832) 292-7088</span>
+                    <span><i class="fas fa-envelope"></i> Kzcgroup1@gmail.com</span>
                 </div>
-                <div class="social-line">
-                    <a href="#">ⓕ</a>
-                    <a href="#">𝕏</a>
-                    <a href="#">🅾</a>
-                    <a href="#">▶</a>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-    </div>
-
-    <!-- Navigation -->
-    <header class="main-header">
-        <div class="mobile-toggle">&#9776;</div>
-        <nav class="nav-menu">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="What We Do.html" class="nav-link">What We Do</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <a href="project.html" class="nav-link">Projects</a>
-        </nav>
     </header>
 
-    <script>
-        document.querySelector(".mobile-toggle").addEventListener("click", function() {
-            document.querySelector(".nav-menu").classList.toggle("open");
-        });
-    </script>
-
-    <!-- Hero Section -->
-    <section class="hero-mini fade-up">
+    <!-- Navigation -->
+    <nav class="main-nav">
         <div class="container">
-            <h1>Let’s Work Together</h1>
-            <p>Get in touch so we can start working together.</p>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="services.html">What We Do <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="procurement.html">Procurement & Supply Chain</a></li>
+                        <li><a href="shipping.html">Shipping & Logistics</a></li>
+                        <li><a href="fleet.html">Fleet Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">What We Do</a></li>
+            <li><a href="procurement.html">Procurement & Supply Chain</a></li>
+            <li><a href="shipping.html">Shipping & Logistics</a></li>
+            <li><a href="fleet.html">Fleet Management</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section style="padding: 60px 0; background: #fff; border-bottom: 1px solid #e5e7eb;">
+        <div class="container">
+            <h1 style="font-size: 42px; font-weight: 700; margin-bottom: 12px;">Let's Work Together</h1>
+            <p style="color: #6b7280; font-size: 18px;">Get in touch so we can start working together.</p>
         </div>
     </section>
 
-<section class="section fade-up">
-    <div class="container contact-page">
-        <div class="contact-wrapper">
-            <!-- Contact Form -->
-            <form action="https://formspree.io/f/xjkzkwna" method="POST" class="contact-form">
-                <input type="hidden" name="form-name" value="contact">
-                <label>First Name</label>
-                <input type="text" name="first-name" placeholder="First Name" required>
-                <label>Last Name</label>
-                <input type="text" name="last-name" placeholder="Last Name" required>
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Email" required>
-                <label>Message</label>
-                <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit" class="btn primary">Send</button>
-            </form>
-
-            <!-- Contact Info + Map -->
-            <div class="contact-info">
-                <p>Phone: +1 832 292 7088</p>
-                <p>Email: <a href="mailto:Kzcgroup1@gmail.com">Kzcgroup1@gmail.com</a></p>
-                <p>4600 Duke Street, Alexandria, VA 22304, USA</p>
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.123456789!2d-77.050000!3d38.815000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7b7b7b7b7b7%3A0x123456789abcdef!2s4600%20Duke%20St%2C%20Alexandria%2C%20VA%2022304!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <p>
-                    <a href="privacy-policy.html">Privacy Policy</a> | 
-                    <a href="accessibility.html">Accessibility Statement</a> | 
-                    <a href="terms.html">Terms & Conditions</a> | 
-                    <a href="refund-policy.html">Refund Policy</a>
-                </p>
-            </div>
+    <!-- Contact Section -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div class="contact-section">
+<form action="https://formspree.io/f/xjkzkwna" method="POST" class="contact-form">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
         </div>
     </div>
-</section>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width: 100%;">
+        <i class="fas fa-paper-plane"></i> Send Message
+    </button>
+</form>
 
+
+                <!-- Contact Info -->
+                <div class="contact-info-side">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+18322927088">+1 832 292 7088</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:Kzcgroup1@gmail.com">Kzcgroup1@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>4600 Duke Street, City Alexandria,<br>State VA, Zip code 22304, USA</p>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.7!2d-77.12!3d38.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s4600+Duke+St%2C+Alexandria%2C+VA+22304!5e0!3m2!1sen!2sus!4v1"
+                            width="100%"
+                            height="250"
+                            style="border: 0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>© <span id="year"></span> KZC Logistics & Solutions LLC — All rights reserved.</p>
-        </div>
-    </footer>
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="https://kzc-logistics.icu/images/logo.png" alt="KZC Logo" class="footer-logo">
+        <p>Your trusted partner for delivery, logistics, maintenance, labor supply, and waste removal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">What We Do</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="returns.html">Returns & Refunds</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>4600 Duke Street, Alexandria, VA 22304, USA</p>
+        <p>Phone: +1 (832) 292-7088</p>
+        <p>Email: Kzcgroup1@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KZC Logistics & Solutions LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
