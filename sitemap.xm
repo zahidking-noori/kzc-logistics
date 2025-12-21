@@ -8,7 +8,7 @@
 
     <url>
     <loc>https://kzc-logistics.com/index.html</loc>
-    <priority>1.00</priority>
+    <priority>0.99</priority>
   </url>
 
   <url>
