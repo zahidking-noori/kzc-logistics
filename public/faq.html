@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Redirecting to FAQ</title>
-    <meta http-equiv="refresh" content="0;url=/faq" />
-    <link rel="canonical" href="https://kzc-logistics.com/faq" />
-    <script>window.location.replace('/faq');</script>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/faq">/faq</a>...</p>
-  </body>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Redirecting to FAQ</title>
+<meta http-equiv="refresh" content="0;url=/" />
+<link rel="canonical" href="https://kzc-logistics.com/faq" />
+<script>
+sessionStorage.setItem('redirect', '/faq');
+window.location.replace('/');
+</script>
+</head>
+<body>
+<p>Redirecting to <a href="/">FAQ</a>...</p>
+</body>
 </html>
