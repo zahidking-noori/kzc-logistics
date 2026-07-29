@@ -7,6 +7,7 @@ import path from 'node:path'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
+  base: './',
   plugins: [
     react(),
     {
@@ -17,6 +18,11 @@ export default defineConfig({
         const indexPath = path.resolve(outDir, 'index.html')
         const fallbackPath = path.resolve(outDir, '404.html')
         await fs.copyFile(indexPath, fallbackPath)
+
+        const cnameSrc = path.resolve(__dirname, 'public', 'CNAME')
+        const cnameDst = path.resolve(outDir, 'CNAME')
+        await fs.copyFile(cnameSrc, cnameDst).catch(() => {})
+
         // Ensure both capitalized and lowercase team legacy filenames exist
         try {
           const teamSrc = path.resolve(outDir, 'Team.html')
